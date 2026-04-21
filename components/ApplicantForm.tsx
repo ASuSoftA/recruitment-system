@@ -272,7 +272,14 @@ export default function ApplicantForm() {
                 </div>
               </div>
             ))}
-            <button type="button" onClick={() => addQual({})} className="w-full py-3 bg-green-100 text-green-700 rounded-xl font-bold">+ إضافة مؤهل</button>
+            <button type="button" onClick={() => addQual({
+  university: '',
+  graduationYear: '',
+  major: '',
+  degree: '',
+  from: '',
+  to: ''
+})} className="w-full py-3 bg-green-100 text-green-700 rounded-xl font-bold">+ إضافة مؤهل</button>
           </div>
           
           {/* الدورات التدريبية */}
@@ -289,7 +296,12 @@ export default function ApplicantForm() {
                 </div>
               </div>
             ))}
-            <button type="button" onClick={() => addCourse({})} className="w-full py-3 bg-yellow-100 text-yellow-700 rounded-xl font-bold">+ إضافة دورة</button>
+            <button type="button" onClick={() => addCourse({
+  place: '',
+  year: '',
+  subject: '',
+  duration: ''
+})} className="w-full py-3 bg-yellow-100 text-yellow-700 rounded-xl font-bold">+ إضافة دورة</button>
           </div>
           
           {/* مهارات الكمبيوتر */}
@@ -306,7 +318,10 @@ export default function ApplicantForm() {
                 <button type="button" onClick={() => removeSkill(idx)} className="text-red-500">✖</button>
               </div>
             ))}
-            <button type="button" onClick={() => addSkill({})} className="w-full py-3 bg-purple-100 text-purple-700 rounded-xl font-bold">+ إضافة مهارة</button>
+            <button type="button" onClick={() => addSkill({
+  skill: 'Word',
+  level: 'جيد'
+})} className="w-full py-3 bg-purple-100 text-purple-700 rounded-xl font-bold">+ إضافة مهارة</button>
           </div>
           
           {/* اللغات */}
@@ -321,7 +336,10 @@ export default function ApplicantForm() {
                 <button type="button" onClick={() => removeLang(idx)} className="text-red-500">✖</button>
               </div>
             ))}
-            <button type="button" onClick={() => addLang({})} className="w-full py-3 bg-indigo-100 text-indigo-700 rounded-xl font-bold">+ إضافة لغة</button>
+            <button type="button" onClick={() => addLang({
+  language: '',
+  level: 'جيد'
+})} className="w-full py-3 bg-indigo-100 text-indigo-700 rounded-xl font-bold">+ إضافة لغة</button>
           </div>
           
           {/* الخبرات العملية */}
@@ -344,7 +362,14 @@ export default function ApplicantForm() {
                 </div>
               </div>
             ))}
-            <button type="button" onClick={() => addExp({})} className="w-full py-3 bg-red-100 text-red-700 rounded-xl font-bold">+ إضافة خبرة</button>
+            <button type="button" onClick={() => addExp({
+  jobTitle: '',
+  company: '',
+  years: '',
+  from: '',
+  to: '',
+  reason: ''
+})} className="w-full py-3 bg-red-100 text-red-700 rounded-xl font-bold">+ إضافة خبرة</button>
           </div>
           
           {/* المرفقات */}
