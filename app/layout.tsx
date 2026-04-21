@@ -1,4 +1,5 @@
-import './globals.css';  // أضف هذا السطر في الأعلى
+// @ts-ignore
+import './globals.css';
 
 export default function RootLayout({
   children,
