@@ -1,0 +1,14 @@
+{
+  "apply": {
+    "title": "Recruitment System",
+    "closed": "Applications are currently closed",
+    "personal": "Personal Information",
+    "name": "Full Name",
+    "submit": "Submit",
+    "addRow": "Add Row"
+  },
+  "admin": {
+    "login": "Login"
+  }
+}
+
